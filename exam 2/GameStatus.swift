@@ -47,18 +47,18 @@ class GameStatus {
             print("Your count: \(money)")
             var answer1 = readLine()
             if answer1 == "Take money" {
-                isFinish == true
+                isFinish = true
                 print("Your count: \(money)")
                         break
             } else if answer1 == "Conctinue" {
-                isFinish == false
+                isFinish = false
 //                money.append(200000)
                 continue
             }
 //            money.append(200000)
 //            print("Your count: \(money)")
         } else if answerToQuestion1 != "a" {
-            isFinish == true
+            isFinish = true
             print("Incorrect answer!")
             print(money)
             break
@@ -73,18 +73,18 @@ class GameStatus {
             print("Your count: \(money)")
             var answer2 = readLine()
             if answer2 == "Take money" {
-                isFinish == true
+                isFinish = true
 //                money[0] = 400000
                 print(money)
                 break
             } else if answer2 == "Conctinue" {
-                isFinish == false
+                isFinish = false
                 continue
             }
 //            money[0] = 400000
 //            print("Your count: \(money)")
         } else if answerToQuestion2 != "d" {
-            isFinish == true
+            isFinish = true
             print("Sorry, but your answer is incorect")
             money[0] = 0
             print(money)
@@ -100,18 +100,18 @@ class GameStatus {
             print("Your count: \(money)")
             var answer3 = readLine()
             if answer3 == "Take money" {
-                isFinish == true
+                isFinish = true
 //                money[0] = 600000
                 print(money)
                 break
             } else if answer3 == "Continue" {
-                isFinish == false
+                isFinish = false
                 continue
             }
         } else if answerToQuestion3 != "c" {
-            isFinish == true
+            isFinish = true
             print("You lost")
-            money[0] == 0
+            money[0] = 0
             print(money)
             break
         }
@@ -125,15 +125,15 @@ class GameStatus {
             print("Your count: \(money)")
             var answer4 = readLine()
             if answer4 == "Take money" {
-                isFinish == true
+                isFinish = true
 //                money[0] == 800000
                 break
             } else if answer4 == "Continue" {
-                isFinish == false
+                isFinish = false
                 continue
             }
         } else if answerToQuestion4 != "b" {
-            isFinish == true
+            isFinish = true
             print("Incorrect, sorry")
             money[0] = 0
             print(money)
@@ -147,7 +147,7 @@ class GameStatus {
             money[0] = 1000000
             print("Your count: \(money)")
         } else if answerToQuestion5 != "b" {
-            isFinish == true
+            isFinish = true
             print("For sad, you lost")
             money[0] = 0
             print(money)
@@ -159,3 +159,6 @@ class GameStatus {
 }
 
 }
+
+
+
